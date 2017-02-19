@@ -47,12 +47,13 @@ Note the usage of readFileSync api call. This instructs node to execute the file
 ## file-async
 This app demonstrates the async non-blocking nature that node is famous for. 
 Note the usage of readFile which is asynchronous and non-blocking.
-When node hits this api it schedules the read of the file to happen asynchronously by another thread.
-It then continues execution from the next step.
-One can see that consloe log for testFile which is the next step main thread executes is 'undefined'.
-And then main thread moves to the next step which sets a timer for 100ms.
-When main thread then executes the same console log for testFile we are able to see the contents.
-Somewhere between these two console log statements, node has asynchronously opened the file and read into the testFile variable. 
+
+1. When node hits this api it schedules the read of the file to happen asynchronously by another thread.
+2. It then continues execution from the next step.
+3. One can see that consloe log for testFile which is the next step main thread executes is 'undefined'.
+4. And then main thread moves to the next step which sets a timer for 100ms.
+5. When main thread then executes the same console log for testFile we are able to see the contents.
+6. Somewhere between these two console log statements, node has asynchronously opened the file and read into the testFile variable. 
 ![fileAsync](https://github.com/spkash-co-in/nodejs-primer/blob/master/fileasyncCapture.JPG)
 
 ## file-stream
