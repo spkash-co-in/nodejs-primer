@@ -1,0 +1,8 @@
+{
+  "name": "mysqldemo",
+  "version": "1.0.0",
+  "description": "simple mysql demo",
+  "dependencies": {
+    "mysql": "^2.13.0"
+  }
+}
