@@ -57,7 +57,7 @@ Note the usage of readFile which is asynchronous and non-blocking.
 ![fileAsync](https://github.com/spkash-co-in/nodejs-primer/blob/master/fileasyncCapture.JPG)
 
 ## file-stream
-The async nature of note is handled behind the hoods using event loops. 
+The async nature of node is handled behind the scenes using event loops. 
 ### Traditional
 Look at the following diagram of traditional execution approach in regualr app-servers/web-servers
 
