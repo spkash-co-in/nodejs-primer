@@ -121,7 +121,9 @@ For mysql docker setup
 `docker start mysql`
 
 Enter in interactive mode to your mysql container using this command
+
 `docker exec -it mysql mysql -uroot -p`
+
 ### output - mysql
 The following snapshot explains the table details
 ![mysql](https://github.com/spkash-co-in/nodejs-primer/blob/master/mysqlCapture.JPG)
